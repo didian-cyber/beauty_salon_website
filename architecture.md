@@ -4,7 +4,7 @@
 Система состоит из трех независимых проектов в монорепозитории:
 
 ### beauty-client - клиентское SPA для пользователей салона красоты
-
+```
 beauty-client/
 ├── public/
 ├── src/
@@ -27,10 +27,9 @@ beauty-client/
 ├── jest.config.ts
 ├── vite.config.js
 └── tsconfig.json
-
-
+```
 ### beauty-admin - административная панель салона
-
+```
 beauty-admin/
 ├── src/
 │ ├── components/
@@ -49,9 +48,9 @@ beauty-admin/
 ├── jest.config.ts
 ├── vite.config.js
 └── tsconfig.json
-
+```
 ### beauty-ui - библиотека UI-компонентов
-
+```
 beauty-ui/
 ├── src/
 │ ├── MasterPhotoCard/
@@ -65,7 +64,7 @@ beauty-ui/
 ├── jest.config.ts
 ├── vite.config.js
 └── tsconfig.json
-
+```
 ## Технологический стек
 
 ### Runtime зависимости
@@ -126,20 +125,21 @@ beauty-ui/
 ## Структура роутинга
 
 ### Клиентское приложение
+```
 /
 ├── /services (Услуги)
 ├── /masters (Мастера)
 └── /booking (Запись)
-
+```
 
 ### Административная панель
-
+```
 /admin
 ├── /login (Вход)
 ├── /services (Управление услугами)
 ├── /masters (Управление мастерами)
 └── /bookings (Управление записями)
-
+```
 
 ## Хранение данных
 Данные хранятся в локальных JSON-файлах. Состояние управляется через React hooks (useState, useContext). Административная панель поддерживает CRUD-операции с сохранением в локальном состоянии.
