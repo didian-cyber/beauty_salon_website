@@ -1,0 +1,58 @@
+/* Все кнопки белые по умолчанию */
+.button {
+  padding: 12px 24px;
+  background: #ffffff;
+  color: #3a3a3a;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+/* Активная/нажатая кнопка - желтая */
+.button.active {
+  background: #f1d366;
+  border-color: #f1d366;
+  color: #3a3a3a;
+  box-shadow: 0 4px 12px rgba(241, 211, 102, 0.3);
+}
+
+/* Ховер эффект для всех кнопок */
+.button:hover:not(:disabled) {
+  color: rgb(0, 0, 0);
+  transform: translateY(-2px);
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.25);
+  background: #f8f9fa;
+  border-color: #d1d5db;
+}
+
+/* Ховер для активных кнопок */
+.button.active:hover:not(:disabled) {
+  background: #e6c95d;
+  border-color: #e6c95d;
+  box-shadow: 0px 12px 32px rgba(241, 211, 102, 0.4);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.button:focus-visible {
+  outline: 2px solid #f1d366;
+  outline-offset: 2px;
+}

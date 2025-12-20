@@ -1,0 +1,197 @@
+.service-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.service-header {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.back-button {
+  margin-bottom: 1.5rem;
+}
+
+.service-category-title {
+  font-size: 2.5rem;
+  color: #2c2c2c;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.category-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.price-table-container {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: white;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.service-name-header {
+  width: 40%;
+}
+
+.time-header,
+.price-header,
+.action-header {
+  width: 15%;
+}
+
+.service-name-cell {
+  padding-right: 2rem;
+}
+
+.service-name-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.service-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.service-name {
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.service-description {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.time-cell {
+  color: #e0c563e8;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.price-cell {
+  font-weight: 600;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+.master-price {
+  color: #4a5568;
+}
+
+.top-master-price {
+  color: #2d3748;
+}
+
+.action-cell {
+  white-space: nowrap;
+}
+
+.service-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.info-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+}
+
+.info-card h3 {
+  color: #2c2c2c;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-card p {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.info-card strong {
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .service-detail-container {
+    padding: 1rem;
+  }
+  
+  .service-category-title {
+    font-size: 2rem;
+  }
+  
+  .category-navigation {
+    padding: 0.75rem;
+    gap: 0.5rem;
+  }
+  
+  .price-table th,
+  .price-table td {
+    padding: 1rem 0.75rem;
+  }
+  
+  .service-name-wrapper {
+    gap: 0.75rem;
+  }
+  
+  .service-icon {
+    font-size: 1.2rem;
+  }
+  
+  .service-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-category-title {
+    font-size: 1.75rem;
+  }
+  
+  .price-table th {
+    font-size: 0.85rem;
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .price-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
