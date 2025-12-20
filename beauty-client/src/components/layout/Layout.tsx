@@ -31,7 +31,7 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
       <footer className="app-footer">
         <div className="container">
           <div className="footer-content">
-            <p className="footer-text">© Студия красоты "Beauty&tochka"</p>
+            <p className="footer-text">© Студия красоты &quot;Beauty&amp;tochka&quot;</p>
             <p className="footer-text">г. Казань, ул. Пушкина, д. Колотушкина</p>
           </div>
         </div>

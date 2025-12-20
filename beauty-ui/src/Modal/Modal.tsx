@@ -37,10 +37,6 @@ export const Modal: React.FC<ModalProps> = ({
         </div>
         
         <div className= "modalStubContent">
-          <div className= "modalStubDescription">
-            <p>Модальное окно для отображения форм, уведомлений и дополнительной информации.</p>
-          </div>
-          
           <div className= "modalStubChildren">
             <h3>Переданные children:</h3>
             <div className= "childrenWrapper">

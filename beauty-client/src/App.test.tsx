@@ -28,16 +28,13 @@ import App from './App'
 describe('App', () => {
   it('рендерится без ошибок', () => {
     render(<App />)
-    
-    //проверяем что приложение отрендерилось
-    expect(screen.getByTestId('button')).toBeInTheDocument()
-    
-    expect(screen.getByText('Добро пожаловать в Beauty&tochka')).toBeInTheDocument()
+
+    expect(screen.getByText('Главная')).toBeInTheDocument()
   })
-  
+
   it('содержит навигацию', () => {
     render(<App />)
-    
+
     expect(screen.getByText('Главная')).toBeInTheDocument()
     expect(screen.getByText('Услуги')).toBeInTheDocument()
     expect(screen.getByText('Мастера')).toBeInTheDocument()

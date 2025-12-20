@@ -4,14 +4,14 @@ import { BookingManagement } from './BookingManagement'
 import '@testing-library/jest-dom'
 
 describe('BookingManagement', () => {
-  it('renders booking management page with text placeholder', () => {
+  it('renders booking management page with title and filters', () => {
     render(
       <BrowserRouter>
         <BookingManagement />
       </BrowserRouter>
     )
-    
+
     expect(screen.getByText('Управление записями')).toBeInTheDocument()
-    expect(screen.getByText(/Функционал страницы будет включать/)).toBeInTheDocument()
+    expect(screen.getByText('Статус:')).toBeInTheDocument()
   })
 })

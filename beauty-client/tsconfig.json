@@ -23,6 +23,6 @@
       "@beauty/ui": ["../beauty-ui/src"]
     }
   },
-  "include": ["src", "jest.config.ts", "src/**/*.test.ts", "src/**/*.test.tsx"],
+  "include": ["src", "jest.config.ts", "src/**/*.test.ts", "src/**/*.test.tsx", "src/**/*.d.ts"],
   "exclude": ["dist", "node_modules"]
 }

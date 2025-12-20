@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
-
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import { ServiceCard } from '@beauty/ui'
-
 import './Services.css'
 
 export function Services(): React.JSX.Element {
-  const [selectedService, setSelectedService] = useState<string | null>(null)
+  const navigate = useNavigate()
 
   const services = [
     {
@@ -46,6 +45,10 @@ export function Services(): React.JSX.Element {
     }
   ]
 
+  const handleServiceClick = (serviceId: string) => {
+    navigate(`/services/${serviceId}`)
+  }
+
   return (
     <section className="section">
       <h2 className="section-title">Услуги</h2>
@@ -56,8 +59,7 @@ export function Services(): React.JSX.Element {
             backgroundImage={service.image}
             title={service.title}
             description={service.description}
-            onClick={() => setSelectedService(service.title)}
-            isSelected={selectedService === service.title}
+            onClick={() => handleServiceClick(service.id)}
           />
         ))}
       </div>
